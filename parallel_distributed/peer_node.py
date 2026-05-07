@@ -19,7 +19,7 @@ class PeerNode(Node):
         print("outbound_node_disconnected: " + connected_node.id)
 
     def node_message(self, connected_node, data):
-        print("node_message from " + connected_node.id + ": " + str(data))
+        print("node_message from " + connected_node.id + ":\n" + str(data))
 
     def node_disconnect_with_outbound_node(self, connected_node):
         print("node wants to disconnect with oher outbound node: " + connected_node.id)
